@@ -1,0 +1,20 @@
+:root {
+  --color-bg: #f8f7fb;
+  --color-white: #ffffff;
+  --color-surface: #ffffff;
+  --color-primary: #6c3cff;
+  --color-secondary: #a78bfa;
+  --color-text: #161616;
+  --color-text-muted: #5f5f6b;
+  --color-border: #e7e2f3;
+
+  --font-title: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  --container-width: 1200px;
+  --section-padding: 96px 24px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --shadow-soft: 0 10px 30px rgba(108, 60, 255, 0.08);
+}
