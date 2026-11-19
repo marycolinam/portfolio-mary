@@ -1,8 +1,6 @@
 import "./FeaturedProject.css";
 
 function FeaturedProject({ project }) {
-  console.log("FeaturedProject prop:", project);
-
   if (!project) {
     return null;
   }
@@ -14,9 +12,10 @@ function FeaturedProject({ project }) {
           src={project.image}
           alt={`Vista previa del proyecto ${project.title}`}
           className="featured-project__image"
+          style={project.background ? { background: project.background } : undefined}
         />
 
-        <div className="featured-project__overlay"></div>
+        {!project.background && <div className="featured-project__overlay"></div>}
 
         <span className="featured-project__badge">Proyecto destacado</span>
       </div>

@@ -1,25 +1,74 @@
 import "./Projects.css";
 import FeaturedProject from "./FeaturedProject";
+import chapuzonImg from "../../assets/images/chapuzon-preview.png";
+import smartBudgetImg from "../../assets/images/smart-budget-preview.png";
+import kovaPayImg from "../../assets/images/kova-pay-preview.png";
 import noirtechImg from "../../assets/images/noirtech-preview.png";
 import booklistImg from "../../assets/images/booklist-vue-preview.png";
-import pixelImg from "../../assets/images/pixel-perfect-preview.png";
 
 const featuredProject = {
-  title: "Noirtech SPA",
+  title: "Chapuzón",
   description:
-    "Aplicación SPA con una estética más técnica y una estructura frontend más completa, enfocada en navegación, componentes y organización del código.",
-  stack: ["Vue", "Vue Router", "JavaScript", "CSS"],
+    "Juego web educativo para aprender a prepararse ante lluvias intensas, inundaciones y aluviones en Chile. Cuatro minijuegos que acompañan a Tadeo y su familia antes, durante y después de un temporal. Proyecto en equipo desarrollado con apoyo de IA generativa de código.",
+  stack: ["HTML", "CSS", "JavaScript", "Canvas", "IA generativa"],
   highlights: [
-    "Arquitectura SPA",
-    "Componentes reutilizables",
-    "Mayor complejidad de interfaz",
+    "4 minijuegos con temporizador y puntaje",
+    "Insignias, ranking y retroalimentación",
+    "Accesibilidad con ARIA y teclado",
+    "Trabajo colaborativo en equipo",
   ],
-  image: noirtechImg,
-  demo: "",
-  repo: "https://github.com/marycolinam/noirtech-spa",
+  image: chapuzonImg,
+  background: "#2c5867",
+  demo: "https://marycolinam.github.io/chapuzon/",
+  repo: "https://github.com/marycolinam/chapuzon",
 };
 
 const projects = [
+  {
+    title: "SmartBudget",
+    focus: "Diseño",
+    description:
+      "Landing page responsiva para una app de finanzas personales, maquetada sin frameworks con arquitectura SASS 7-1 y metodología BEM.",
+    stack: ["HTML", "SASS", "BEM", "CSS Grid", "Flexbox"],
+    highlights: [
+      "Arquitectura SASS 7-1",
+      "Responsive desktop, tablet y mobile",
+      "Componentes con BEM",
+    ],
+    image: smartBudgetImg,
+    demo: "https://marycolinam.github.io/smart-budget-ABP/",
+    repo: "https://github.com/marycolinam/smart-budget-ABP",
+  },
+  {
+    title: "Kova Pay",
+    focus: "Código",
+    description:
+      "Billetera digital con login, depósitos, envío de dinero a contactos e historial de movimientos con filtros, todo persistido en el navegador.",
+    stack: ["JavaScript", "jQuery", "Bootstrap", "localStorage"],
+    highlights: [
+      "Manipulación del DOM y eventos",
+      "Validación de formularios",
+      "Persistencia con localStorage",
+    ],
+    image: kovaPayImg,
+    demo: "https://marycolinam.github.io/kova-pay/login.html",
+    repo: "https://github.com/marycolinam/kova-pay",
+  },
+  {
+    title: "Noirtech SPA",
+    focus: "Arquitectura",
+    description:
+      "Aplicación SPA con una estética técnica y una estructura frontend completa, enfocada en navegación, componentes y organización del código.",
+    stack: ["Vue", "Vue Router", "JavaScript", "CSS"],
+    highlights: [
+      "Arquitectura SPA",
+      "Componentes reutilizables",
+      "Navegación con Vue Router",
+    ],
+    image: noirtechImg,
+    demo: "",
+    repo: "https://github.com/marycolinam/noirtech-spa",
+  },
   {
     title: "Booklist Vue",
     focus: "Código",
@@ -35,17 +84,6 @@ const projects = [
     demo: "https://unique-hamster-b3a9ce.netlify.app",
     repo: "https://github.com/marycolinam/booklist-vue",
   },
-  {
-    title: "Pixel Perfect",
-    focus: "Diseño",
-    description:
-      "Course Card desarrollada con foco en fidelidad visual y organización de estilos con metodología BEM y SASS modular.",
-    stack: ["HTML", "SASS", "BEM"],
-    highlights: ["Precisión visual", "BEM", "SASS modular"],
-    image: pixelImg,
-    demo: "https://marycolinam.github.io/pixel-perfect-l2/",
-    repo: "https://github.com/marycolinam/pixel-perfect-l2",
-  },
 ];
 
 function Projects() {
@@ -59,9 +97,9 @@ function Projects() {
         </h2>
 
         <p className="projects__intro">
-          Cada proyecto representa una parte distinta de mi camino como
-          desarrolladora frontend: desde la lógica y la arquitectura hasta la
-          atención al detalle visual.
+          Cada proyecto representa una etapa de mi camino como desarrolladora
+          frontend, desde la lógica y la arquitectura hasta el detalle visual
+          y el trabajo en equipo.
         </p>
 
         <FeaturedProject project={featuredProject} />

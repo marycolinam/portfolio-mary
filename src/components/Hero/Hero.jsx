@@ -8,12 +8,12 @@ function Hero() {
           <p className="hero__eyebrow">Hello, I&apos;m</p>
 
           <h1 className="hero__title">
-            Mary
-            <span> Creative Frontend Developer in progress</span>
+            Mary Colina
+            <span> Frontend Developer · Analista Programador en formación</span>
           </h1>
 
           <p className="hero__terminal">
-            &gt; creando experiencias digitales claras, funcionales y con
+            creando experiencias digitales claras, funcionales y con
             intención
           </p>
 

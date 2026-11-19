@@ -1,5 +1,16 @@
 import "./About.css";
 
+const skills = [
+  { name: "HTML", label: "estructura semántica" },
+  { name: "CSS · SASS", label: "diseño responsive y BEM" },
+  { name: "JavaScript", label: "lógica interactiva" },
+  { name: "React", label: "componentes reutilizables" },
+  { name: "Vue", label: "SPA y Vue Router" },
+  { name: "Python", label: "lógica y fundamentos" },
+  { name: "Git", label: "control de versiones" },
+  { name: "IA", label: "desarrollo asistido" },
+];
+
 function About() {
   return (
     <section className="about" id="about">
@@ -32,43 +43,38 @@ function About() {
         <p className="about__eyebrow">Sobre mí</p>
 
         <h2 className="about__title">
-          No solo escribo código, construyo experiencias digitales con
-          intención.
+          Construyo experiencias digitales claras, cuidadas y con intención.
         </h2>
 
         <div className="about__text">
           <p>
-            Soy desarrolladora frontend en formación, enfocada en crear
-            interfaces claras, funcionales y visualmente cuidadas.
+            Soy Mariangel Colina, desarrolladora frontend freelance y
+            estudiante de Analista Programador en el Instituto Profesional
+            IPLACEX. Vivo en Santiago de Chile y trabajo en español e inglés.
           </p>
 
           <p>
-            Me interesa combinar estructura, estética y detalle para construir
-            sitios que no solo funcionen bien, sino que también se sientan
-            coherentes, agradables y bien pensados.
+            Antes de programar trabajé en gestión comercial, operaciones y
+            análisis de información. De esa etapa traigo la comunicación, el
+            pensamiento estructurado y el trabajo en equipo, que hoy aplico en
+            cada proyecto.
+          </p>
+
+          <p>
+            Me interesa combinar lógica, estética y detalle para construir
+            interfaces coherentes, agradables y bien pensadas. Hoy sigo
+            sumando Python, fundamentos de ingeniería de software y desarrollo
+            asistido con IA.
           </p>
         </div>
 
         <div className="about__stats">
-          <article className="about__stat">
-            <span className="about__stat-number">HTML</span>
-            <span className="about__stat-label">estructura semántica</span>
-          </article>
-
-          <article className="about__stat">
-            <span className="about__stat-number">CSS</span>
-            <span className="about__stat-label">diseño responsive</span>
-          </article>
-
-          <article className="about__stat">
-            <span className="about__stat-number">JS</span>
-            <span className="about__stat-label">lógica interactiva</span>
-          </article>
-
-          <article className="about__stat">
-            <span className="about__stat-number">React</span>
-            <span className="about__stat-label">componentes reutilizables</span>
-          </article>
+          {skills.map((skill) => (
+            <article className="about__stat" key={skill.name}>
+              <span className="about__stat-number">{skill.name}</span>
+              <span className="about__stat-label">{skill.label}</span>
+            </article>
+          ))}
         </div>
       </div>
     </section>

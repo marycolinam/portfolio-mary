@@ -36,7 +36,6 @@ function Contact() {
     } finally {
       setIsSending(false);
     }
-    <input type="hidden" name="botcheck" />;
   };
 
   return (
@@ -66,6 +65,29 @@ function Contact() {
             <div className="contact__item">
               <span className="contact__label">Idioma</span>
               <p className="contact__value">Español · Inglés</p>
+            </div>
+
+            <div className="contact__item">
+              <span className="contact__label">Redes</span>
+              <p className="contact__value">
+                <a
+                  href="https://github.com/marycolinam"
+                  className="contact__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+                {" · "}
+                <a
+                  href="https://www.linkedin.com/in/marycolinam/"
+                  className="contact__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </p>
             </div>
           </div>
         </div>

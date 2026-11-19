@@ -315,3 +315,14 @@
     opacity: 1;
   }
 }
+
+.contact__link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.contact__link:hover {
+  opacity: 0.75;
+}
