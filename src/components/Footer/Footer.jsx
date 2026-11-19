@@ -7,18 +7,20 @@ function Footer() {
       <div className="footer__container">
         <div className="footer__socials">
           <a
-            href="#"
+            href="https://github.com/marycolinam"
             target="_blank"
-            rel="https://github.com/pauudev"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
             className="footer__icon"
           >
             <Github size={20} />
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/in/marycolinam/"
             target="_blank"
-            rel="https://www.linkedin.com/in/paolacolinam/"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
             className="footer__icon"
           >
             <Linkedin size={20} />
