@@ -58,15 +58,15 @@ const projects = [
     title: "Noirtech SPA",
     focus: "Arquitectura",
     description:
-      "Aplicación SPA con una estética técnica y una estructura frontend completa, enfocada en navegación, componentes y organización del código.",
-    stack: ["Vue", "Vue Router", "JavaScript", "CSS"],
+      "Catálogo de productos SPA que consume una API REST, con filtro por categoría, vista de detalle y favoritos. Incluye pruebas unitarias y end-to-end.",
+    stack: ["Vue 3", "Vuex", "Vue Router", "Vuetify", "Axios", "Jest", "Cypress"],
     highlights: [
-      "Arquitectura SPA",
-      "Componentes reutilizables",
-      "Navegación con Vue Router",
+      "Estado global con Vuex",
+      "Consumo de API con Axios",
+      "Tests con Jest y Cypress",
     ],
     image: noirtechImg,
-    demo: "",
+    demo: "https://noirtech-spa.vercel.app",
     repo: "https://github.com/marycolinam/noirtech-spa",
   },
   {
