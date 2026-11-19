@@ -48,9 +48,9 @@ function About() {
 
         <div className="about__text">
           <p>
-            Soy Mariangel Colina, desarrolladora frontend freelance y
+            Soy Mary Colina, desarrolladora frontend freelance y
             estudiante de Analista Programador en el Instituto Profesional
-            IPLACEX. Vivo en Santiago de Chile y trabajo en español e inglés.
+            IPLACEX. Vivo en Santiago de Chile y me comunico en español e inglés.
           </p>
 
           <p>
