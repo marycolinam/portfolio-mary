@@ -16,7 +16,7 @@ const featuredProject = {
   ],
   image: noirtechImg,
   demo: "",
-  repo: "https://github.com/pauudev/noirtech-spa",
+  repo: "https://github.com/marycolinam/noirtech-spa",
 };
 
 const projects = [
@@ -33,7 +33,7 @@ const projects = [
     ],
     image: booklistImg,
     demo: "https://unique-hamster-b3a9ce.netlify.app",
-    repo: "https://github.com/pauudev/booklist-vue",
+    repo: "https://github.com/marycolinam/booklist-vue",
   },
   {
     title: "Pixel Perfect",
@@ -43,8 +43,8 @@ const projects = [
     stack: ["HTML", "SASS", "BEM"],
     highlights: ["Precisión visual", "BEM", "SASS modular"],
     image: pixelImg,
-    demo: "https://pauudev.github.io/pixel-perfect-l2/",
-    repo: "https://github.com/pauudev/pixel-perfect-l2",
+    demo: "https://marycolinam.github.io/pixel-perfect-l2/",
+    repo: "https://github.com/marycolinam/pixel-perfect-l2",
   },
 ];
 
