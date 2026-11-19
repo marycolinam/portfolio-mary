@@ -55,15 +55,15 @@ const projects = [
     repo: "https://github.com/marycolinam/kova-pay",
   },
   {
-    title: "Noirtech SPA",
+    title: "NoirTech Store",
     focus: "Arquitectura",
     description:
-      "Catálogo de productos SPA que consume una API REST, con filtro por categoría, vista de detalle y favoritos. Incluye pruebas unitarias y end-to-end.",
-    stack: ["Vue 3", "Vuex", "Vue Router", "Vuetify", "Axios", "Jest", "Cypress"],
+      "Tienda online SPA de tecnología con búsqueda, filtros y orden, detalle con galería y reseñas, favoritos, carrito persistente y checkout simulado con validación de formularios.",
+    stack: ["Vue 3", "Vuex", "Vue Router", "Axios", "SCSS", "Jest", "Cypress"],
     highlights: [
-      "Estado global con Vuex",
-      "Consumo de API con Axios",
-      "Tests con Jest y Cypress",
+      "Carrito y checkout con Vuex",
+      "Búsqueda, filtros y orden",
+      "10 tests unitarios y e2e",
     ],
     image: noirtechImg,
     demo: "https://noirtech-spa.vercel.app",
